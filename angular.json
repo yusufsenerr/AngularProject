@@ -30,7 +30,7 @@
               "src/styles.css"
             ],
             "scripts": [
-
+              "node_modules/font-awesome/js/font-awesome.min.js"
 
             ]
           },

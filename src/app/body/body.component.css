@@ -14,7 +14,7 @@
 }
 
 .card-img-actions {
-    position: relative;
+    position:relative;
 }
 .card-body {
     -ms-flex: 1 1 auto;
@@ -25,7 +25,10 @@
 
 .card-img{
 
-    width: 350px;
+    width: 225px!important;
+    height: 150px!important;
+    max-width: 100%!important;
+    max-height: auto!important;
 }
 
 .star{

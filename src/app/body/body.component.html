@@ -23,14 +23,14 @@
         <div class="container d-flex justify-content-center mt-50 mb-50">
                 
         <div class="row">
-           <div class="col-md-4 mt-2" *ngFor="let product of products | productFilter:FilterText">
+           <div class="col-md-4 mt-3" *ngFor="let product of products | productFilter:FilterText">
             
                 
                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-img-actions">
                                             
-                                                <img [src]="product.ImageUrl" class="card-img img-fluid" width="96" height="350" alt="">
+                                                <img [src]="product.ImageUrl" class="card-img img-fluid"  alt="">
 
                                         </div>
                                     </div>
@@ -43,8 +43,9 @@
     
                                             <a href="#" class="text-muted" data-abc="true">{{product.Category}}</a>
                                         </div>
-    
-                                        <h3 class="mb-0 font-weight-semibold">{{product.Price | currency:'TRY':true:"1.2-2"}}</h3>
+                                        <div class="mb-2">
+                                            <h3 class="mb-0 font-weight-semibold">{{product.Price | currency:'TRY':true:"1.2-2"}}</h3>
+                                        </div>
     
     
                                         <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i>Sepete Ekle</button>

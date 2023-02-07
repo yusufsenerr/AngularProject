@@ -2,23 +2,27 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './Header/header.component';
+import { NavbarComponent } from './Navbar/navbar.component';
 import { BodyComponent } from './body/body.component';
 import { ProductFilterPipe } from './body/product-filter.pipe';
+import { SidebarComponent } from './Sidebar/sidebar/sidebar.component';
+import { FooterComponent } from './Footer/footer/footer.component';
 
 
 @NgModule({
   declarations: [	
     AppComponent,
-    HeaderComponent,
+    NavbarComponent,
+    SidebarComponent,
     BodyComponent,
     ProductFilterPipe,
+    FooterComponent,
    ],
   imports: [
     BrowserModule,
     FormsModule
   ],
   providers: [],
-  bootstrap: [HeaderComponent,AppComponent,BodyComponent]
+  bootstrap: [NavbarComponent,SidebarComponent,AppComponent,BodyComponent,FooterComponent]
 })
 export class AppModule { }

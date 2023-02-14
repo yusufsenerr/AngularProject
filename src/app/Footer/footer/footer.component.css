@@ -5,17 +5,9 @@ body {
     font-family: 'Open Sans', serif;
     font-size: 14px
 }
-
-.section{
-    display: flex!important;
+footer{
+    display: flex;
 }
-#footer{
-    display: block!important;
-}
-output{
-    display: block!important;
-}
-
 .container-fluid {
     margin-top: 50px;
     padding-right: 0px;

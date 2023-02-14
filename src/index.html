@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
   <title>Create Angular Project</title>
-  <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
-<body>  
+
+<body>
   <app-navbar></app-navbar>
   <app-sidebar></app-sidebar>
 
@@ -21,10 +22,10 @@
         <app-root></app-root>
         <app-body></app-body>
       </div>
-    
+
     </div>
   </div>
-<app-footer></app-footer>
+  <app-footer></app-footer>
 
 
 
@@ -33,26 +34,8 @@
 
 
 
-</div>
+  </div>
 
 </body>
+
 </html>
-<script>
-  $(document).ready(function(){
-  $(window).scroll(function () {   
-     
-   if($(window).scrollTop() > 200) {
-      $('#sidebar').css('position','fixed');
-      $('#sidebar').css('top','0'); 
-   }
-  
-   else if ($(window).scrollTop() <= 200) {
-      $('#sidebar').css('position','');
-      $('#sidebar').css('top','');
-   }  
-      if ($('#sidebar').offset().top + $("#sidebar").height() > $("#footer").offset().top) {
-          $('#sidebar').css('top',-($("#sidebar").offset().top + $("#sidebar").height() - $("#footer").offset().top));
-      }
-  });
-  });
-  </script>

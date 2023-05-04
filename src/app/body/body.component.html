@@ -22,7 +22,6 @@
         </div>
     </ng-template>
     <div class="container d-flex justify-content-center mt-50 mb-5<0">
-
         <div class="row">
             <div class="col-md-4 mt-3" *ngFor="let product of products | productFilter:FilterText">
                 <div class="col mb-5">
@@ -31,12 +30,12 @@
                         <div class="badge text-white position-absolute"
                             style="top: 0.5rem; right: 0.5rem; background-color: red;">İndirim</div>
                         <!-- Product image-->
-                        <div class="ProductImg"><img class="card-img-top" [src]="product.ImageUrl"/></div>
+                        <div class="ProductImg"><img class="card-img-top" width="140px" height="140px" [src]="product.ImageUrl"/></div>
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h5 class="fw-bolder ProductTitleText" style="max-lines: 2;  min-inline-size: 20px;">{{product.Name}}</h5>
+                                <h5 class="fw-bolder ProductTitleText" style="-webkit-line-clamp: 2; min-inline-size: 20px;">{{product.Name}}</h5>
                                 <h6 class="fw-normal">{{product.Category}}</h6>
                                 <h5 class="pt-2"><span class="text-muted text-decoration-line-through">{{product.Price +
                                         (product.Price*0.13) | currency:'TRY':true:"1.2-2"}}</span>
@@ -51,8 +50,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
 </div>
